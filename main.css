@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif; 
+}
+
+body {
+    display: flex;
+    background-color: white;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px; 
+    width: 950px; 
+    box-sizing: border-box; 
+}
+
+.header h1 {
+    margin: 10px;
+    font-size: 30px; 
+}
+
+.wrapper {
+    margin-left: 160px; 
+    padding: 20px;
+}
+
+.navbar {
+    width: 150px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+    position: fixed;
+    overflow-x: hidden;
+}
+
+.navbar p.courses {
+    padding: 16px;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    display: block;
+    text-align: center;
+    font-weight: bold; 
+}
+
+.navbar a {
+    padding: 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+img {
+    position: fixed;
+    top: 10px; 
+    right: 10px; 
+    max-width: 10%;
+    height: auto;
+    border-radius: 70px;
+    padding: 10px;
+}
+
+.wrapper .course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.wrapper .course-header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.wrapper .course-header #courseNameInput {
+    font-size: 20px;
+    border: none;
+    background-color: #fff; 
+    color: #333;
+    padding: 5px 10px; 
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.wrapper .course-header #courseNameInput:focus {
+    outline: none;
+}
+
+button {
+    padding: 5px; 
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+#assessmentTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#assessmentTable th, #assessmentTable td {
+    border: 1px solid #ddd; 
+    padding: 8px; 
+    text-align: left;
+}
+
+#assessmentTable th {
+    background-color: #f2f2f2; 
+}
+
+#assessmentTable td input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+#assessmentTable th:nth-child(1),
+#assessmentTable td:nth-child(1) {
+    width: 50%; 
+}
+
+.assessment {
+    margin-bottom: 10px; 
+}
+
+.button-container {
+    margin-top: 10px; 
+    margin-bottom: 8px; 
+}
+
+.add-assessment-button {
+    padding: 5px; 
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-assessment-button:hover {
+    background-color: darkorange;
+}
+
+.average-display {
+    font-size: 17px;
+}

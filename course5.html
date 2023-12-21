@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">  
+        <title>Course 5 - Grade GPA Calculator</title>
+        <link rel="stylesheet" href="main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <p class="courses">Courses</p>
+            <a href="course1.html">Course 1</a>
+            <a href="course2.html">Course 2</a>
+            <a href="course3.html">Course 3</a>
+            <a href="course4.html">Course 4</a>
+            <a href="course5.html">Course 5</a>
+            <a href="course6.html">Course 6</a>
+            <a href="course7.html">Course 7</a>
+            <a href="course8.html">Course 8</a>
+        </div>
+        <div class="wrapper">
+            <div class="icon">
+                <img src="calculatorIcon.jpeg" alt="Icon">
+            </div>
+            <header class="header">
+                <h1>Grade Calculator</h1>
+            </header>
+            <div class="course-header">
+                <h1 id="courseTitle">Course 5</h1>
+                <input type="text" id="courseNameInput" placeholder="Course 5" onkeydown="handleEnterKey(event)">
+            </div>
+            <div class="assessment">
+                <table id="assessmentTable">
+                    <thead>
+                        <tr>
+                            <th>Assessment</th>
+                            <th>Grade</th>
+                            <th>Weight</th>
+                            <th>Clear</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" placeholder="Assessment"></td>
+                            <td><input type="text" placeholder="Grade"></td>
+                            <td><input type="text" placeholder="Weight"></td>
+                            <td><button onclick="clearRow(this)">Clear</button></td>
+                            <td><button onclick="deleteRow(this)">Remove</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="button-container">
+                <button class="add-assessment-button" onclick="addRow()">Add Assessment</button>
+            </div>
+            <div id="averageDisplay" class="average-display"></div>
+        </div>
+    </body>
+</html>
